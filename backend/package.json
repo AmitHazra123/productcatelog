@@ -1,0 +1,26 @@
+{
+  "name": "productcatelog",
+  "version": "1.0.0",
+  "description": "This project is about to simple product management application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server",
+    "prod": "SET NODE_ENV=production & nodemon server",
+    "heroku-postbuild": "NODE_ENV=production && npm install"
+  },
+  "author": "Amit Hazra",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.16.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.6",
+    "mongoose": "^5.7.8",
+    "path": "^0.12.7",
+    "validator": "^12.0.0"
+  }
+}
